@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>/AymalieV/</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script language="javascript" type="text/javascript">
+function resizeIframe(obj){			obj.style.height = 10 + 'px';
+									obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
+function fix(){					    var el = this.parentNode;
+									var par = el.parentNode;
+									var next = el.nextSibling;
+									par.removeChild(el);
+									setTimeout(function() {par.insertBefore(el, next);}, 0)
+}
+</script>
+</head>
+
+<body>
+<h1>/AymalieV/</h1>
+<h5>Personal Website</h5>
+<nav id='mainnav'>
+<ul>
+	<li><a>About Me</a>
+		<ul ontouchend="this.onclick=fix">
+			<li><a href="introduction.html" target="contentFrame">Introduction</a></li>
+			<li><a href="about.html" target="contentFrame">Hobbies</a></li>
+			<li><a href="#">Experience</a></li>
+			<li><a href="#">Education</a></li>
+		</ul>
+	</li>
+	<li><a>Resources</a>
+		<ul ontouchend="this.onclick=fix">
+			<li><a href="/downloads/" target="contentFrame">Downloads</a></li>
+			<li><a href="#">Links</a></li>
+			<li><a href="#">FriendSites</a></li>
+		</ul>
+	</li>
+	<li><a>Projects</a>
+		<ul ontouchend="this.onclick=fix">
+			<li><a href="#">Complete</a></li>
+			<li><a href="#">Ongoing</a></li>
+			<li><a href="#">Ideas</a></li>
+			<li><a href="#">Abandoned</a></li>
+		</ul>
+	</li>
+	<li><a>Contact</a>
+		<ul ontouchend="this.onclick=fix">
+			<li><a href="#">Email</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">vCard</a></li>
+			<li><a href="#">Submenu 4</a></li>
+		</ul>
+	</li>
+</ul>
+<iframe src="about.html" name="contentFrame" scrolling="no" width="100%" id="iframe" onload="javascript:resizeIframe(this);">
+</iframe>
+</nav>
+</body>
+</html>
