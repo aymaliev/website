@@ -15,8 +15,7 @@
 			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';								
 		} 
 		</script> -->
-	<script language="javascript" type="text/javascript">
-			function fix()
+	<script language="javascript" type="text/javascript"> function fix()
 			{	var el = this.parentNode;
 				var par = el.parentNode;
 				var next = el.nextSibling;
@@ -24,8 +23,7 @@
 				setTimeout(function() {par.insertBefore(el, next);}, 0)
 			}
 	</script> 
-	<script>
-		function show(shown) {
+	<script> function show(shown) {
 		document.getElementById('Welcome').style.display='none';
 		document.getElementById('Introduction').style.display='none';
 		document.getElementById('Profile').style.display='none';
@@ -334,10 +332,52 @@
 </div>
 
 <div id="ManicDigger" style="display:none">
-<p align="middle"><img align="middle" src="http://orig01.deviantart.net/a9e6/f/2012/258/4/6/pocket_treasure_by_drazebot-d5er9mc.jpg">
-<br>Nothing was found here</p>
-</div>
+<div id="MDText">
+		Manic Digger
+		<br>Manic Digger is a 3D voxel block-building game like Minecraft.
+		<br>
+		<ol>
+			<li>Prerequisites</li>
+			<ul>
+				<li>Plan for the cooking</li>
+				<li>Complete set of ingredients</li>
+				<li>Fresh ingredients</li>
+				<li>Appropriate drinks</li>
+				<li>Enough energy</li>
+				<li>More than enough time</li>
+			</ul>
+			<li>Environment variables</li>
+			<ul>
+				<li>Good company</li>
+				<li>Thematic (to the dish) music</li>
+				<li>Proper lighting</li>
+			</ul>
+			<li>Actual cooking</li>
+			<ul>
+				<li>Pour the drinks</li>
+				<li>Begin the prepared plan</li>
+				<li>Distribute the tasks accordingly</li>
+				<li>Communicate</li>
+				<li>Taste while cooking</li>
+				<li>Dynamically adapt the plan</li>
+			</ul>
+			<li>Serving</li>
+			<ul>
+				<li>Discuss the presentation</li>
+				<li>Get some serving ideas from everybody</li>
+				<li>Arrange the plates beautifully</li>
+				<li>Arrange the table like a masterpiece</li>
+				<li>Enjoy the taste (do not hurry)</li>
+			</ul>
+		</ol>
+	</div>
 
+	<div id="MDpic">
+		<img align="top" src="http://www.aymaliev.tk/lists/images/salmon.jpg" style="max-height:333px;max-width:333px" border="10">
+	</div>
+	
+</div>
+</div>
 
 <div id="Downloads" style="display:none">
 <table class="sortable" width=100% border=0px>
@@ -493,6 +533,7 @@ Email:
 </form>
 </div>
 </div>
+
 <div id="Gallery" style="display:none">
 <?php
 $files = glob("lists/certificates/competitions/*.*");
