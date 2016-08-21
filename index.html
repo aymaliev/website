@@ -41,6 +41,7 @@
 		document.getElementById('Low-power PCs').style.display='none';
 		document.getElementById('Traveling').style.display='none';
 		
+		document.getElementById('ManicDigger').style.display='none';
 		document.getElementById('Profile').style.display='none';
 		document.getElementById('Profile').style.display='none';
 		document.getElementById('Profile').style.display='none';
@@ -67,11 +68,12 @@
 		document.getElementById('Profile').style.display='none';
 		document.getElementById('Profile').style.display='none';
 		document.getElementById('Profile').style.display='none';
-		document.getElementById('Profile').style.display='none';
+		
 		document.getElementById('Downloads').style.display='none';
 		document.getElementById('Blog').style.display='none';
 		document.getElementById('Gallery').style.display='none';
 		document.getElementById('Contact').style.display='none';
+		
 		document.getElementById(shown).style.display='block';
 		return false;
 		}
@@ -134,6 +136,7 @@
 		<ul>
 			<li><a href="#">Complete</a>
 				<ul ontouchend="this.onclick=fix">
+				<li><a href="#" onclick="return show('ManicDigger');">Manic Digger Server</a></li>
 				<li><a href="/lists/projects/oldprojects/universe/" target="_new">The Universe</a></li>
 				<li><a href="/lists/projects/oldprojects/samuils%20fortress/" target="_new">Samuil's Fortress</a></li>
 				<li><a href="#" onclick="return show('');">Lean Portable Server Config</a></li>
@@ -310,12 +313,12 @@
 		Straight Razor Shaving
 		<br><br>Let me explain:
 		<ul>
-			<li>First of all, it is less dangerous than driving.
-			<li>For some people, it is a hobby like any other. They collect and experiment with different shaving gear.
-			<li>Others point out that disposable blades are eco-unfriendly.
-			<li>If you do it right, the shave with a straight razor is closer, compared to the shave with a disposable blade.
-			<li>Straight razor shaving requires some initial capital, but can be viewed as an investment, for a razor's useful life is more than a hundred years.
-			<li>With a straight razor, shaving becomes a pleasant morning ritual.
+			<li>First of all, it is less dangerous than driving.</li>
+			<li>For some people, it is a hobby like any other. They collect and experiment with different shaving gear.</li>
+			<li>Others point out that disposable blades are eco-unfriendly.</li>
+			<li>If you do it right, the shave with a straight razor is closer, compared to the shave with a disposable blade.</li>
+			<li>Straight razor shaving requires some initial capital, but can be viewed as an investment, for a razor's useful life is more than a hundred years.</li>
+			<li>With a straight razor, shaving becomes a pleasant morning ritual.</li>
 		</ul>
 	</p>
 </div>
@@ -330,7 +333,10 @@
 <br>Nothing was found here</p>
 </div>
 
-
+<div id="ManicDigger" style="display:none">
+<p align="middle"><img align="middle" src="http://orig01.deviantart.net/a9e6/f/2012/258/4/6/pocket_treasure_by_drazebot-d5er9mc.jpg">
+<br>Nothing was found here</p>
+</div>
 
 
 <div id="Downloads" style="display:none">
