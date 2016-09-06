@@ -65,7 +65,7 @@
 		document.getElementById('Profile').style.display='none';
 		document.getElementById('Profile').style.display='none';
 		document.getElementById('Profile').style.display='none';
-		document.getElementById('Profile').style.display='none';
+		document.getElementById('self').style.display='none';
 		
 		document.getElementById('Downloads').style.display='none';
 		document.getElementById('Blog').style.display='none';
@@ -149,7 +149,7 @@
 			</li>
 			<li><a href="#">Current</a>
 				<ul ontouchend="this.onclick=fix">
-					<li><a href="#" onclick="return show('');">This Website</a></li>
+					<li><a href="#" onclick="return show('self');">This Website</a></li>
 					<li><a href="#" onclick="return show('Blog');">Personal Blog</a></li>
 					<li><a href="/blog/forum" target="_blank">Discussion Forum</a></li>
 					<li><a href="#" onclick="return show('');">L2 Multiskills Server x1.5</a></li>
@@ -347,6 +347,14 @@
 	</div>
 	
 </div>
+</div>
+
+<div id="self" style="display:none">
+	<p>
+		<br>Clean two-file HTML website with an index page and a single .css
+		<br><br>You can view the latest version on github: 
+		<a href="https://github.com/aymaliev/website"> https://github.com/aymaliev/website<a>
+	</p>
 </div>
 
 <div id="Downloads" style="display:none">
