@@ -365,28 +365,28 @@
 	</p>
 </div> <!-- Website -->
 
-<div id="DecisionScience" style="display:none">
-<h1>This is demo app</h1>
+<div id="DecisionScience" style="display:none" align="center">
+<p>This is a demo app</p>
 
-		<p>Question.</p>
+		<p>Question1</p>
 		<form class='question'>
 			<input type="radio" name='question1' value='1' checked>1<br>
 			<input type="radio" name='question1' value='2'>2<br>
 			<input type="radio" name='question1' value='3'>3<br>
 		</form>
-		<p>Question.</p>
+		<p>Question2</p>
 		<form class='question'>
 			<input type="radio" name='question2' value='4' checked>4<br>
 			<input type="radio" name='question2' value='5'>5<br>
 			<input type="radio" name='question2' value='6'>6<br>
 		</form>
-		<p>Question.</p>
+		<p>Question3</p>
 		<form class='question'>
 			<input type="radio" name='question3' value='7' checked>7<br>
 			<input type="radio" name='question3' value='8'>8<br>
 			<input type="radio" name='question3' value='9'>9<br>
 		</form>
-		<p>Question.</p>
+		<p>Question4</p>
 		<form class='question'>
 			<input type="radio" name='question4' value='10' checked>10<br>
 			<input type="radio" name='question4' value='11'>11<br>
@@ -417,8 +417,9 @@
 					}
 				}
 
-				p.innerHTML=result;//put the result as a text into a paragraph
-				document.body.appendChild(p);//append the paragraph at the end of the html body
+				p.innerHTML="Your final result is "+result+" points";//put the result as a text into a paragraph
+				var div=document.getElementById("DecisionScience");
+				div.appendChild(p);//append the paragraph at the end of the html body
 			}
 		</script>
 </div> <!-- Decision Science -->
