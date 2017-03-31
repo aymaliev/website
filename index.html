@@ -170,6 +170,7 @@
 	</li>
 	<li><a>Resources</a>
 		<ul ontouchend="this.onclick=fix">
+			<li><a href="#" onclick="return show('DecisionScience');">Decision Science proj</a></li>
 			<li><a href="#" onclick="return show('Downloads');">Downloads</a></li>
 			<li><a href="#" onclick="return show('Links');">Links</a></li>
 			<li><a href="#" onclick="return show('FriendSites');">FriendSites</a></li>
@@ -208,6 +209,7 @@
 </div> <!-- Introduction -->
 <div id="Profile" style="display:none">
 <p align="right">Imagine a world in which you can freely decide what information to include on your own profile page.
+</p>
 <p>
 <br><br>So, I was born in 1990. 
 <br>The exact date is a matter of privacy and security but most websites kindly agree that it is on the 5th of November (Remember, remember?). It is a good date to celebrate, but "something completely different". In case you would like to get me a present, here is a link to <a href="http://www.amazon.co.uk/gp/registry/wishlist/2RXWQLE978SXJ" target="_blank">my public wishlist</a>.
@@ -309,6 +311,7 @@
 			<li>Straight razor shaving requires some initial capital, but can be viewed as an investment, for a razor's useful life is more than a hundred years.</li>
 			<li>With a straight razor, shaving becomes a pleasant morning ritual.</li>
 		</ul>
+	</p>
 </div> <!-- Straight Razor Shaving -->
 <div id="Low-power PCs" style="display:none">
 <p align="middle"><img align="middle" src="http://orig01.deviantart.net/a9e6/f/2012/258/4/6/pocket_treasure_by_drazebot-d5er9mc.jpg">
@@ -361,6 +364,64 @@
 		<a href="https://github.com/aymaliev/website"> https://github.com/aymaliev/website</a>
 	</p>
 </div> <!-- Website -->
+
+<div id="DecisionScience" style="display:none">
+<h1>This is demo app</h1>
+
+		<p>Question.</p>
+		<form class='question'>
+			<input type="radio" name='question1' value='1' checked>1<br>
+			<input type="radio" name='question1' value='2'>2<br>
+			<input type="radio" name='question1' value='3'>3<br>
+		</form>
+		<p>Question.</p>
+		<form class='question'>
+			<input type="radio" name='question2' value='4' checked>4<br>
+			<input type="radio" name='question2' value='5'>5<br>
+			<input type="radio" name='question2' value='6'>6<br>
+		</form>
+		<p>Question.</p>
+		<form class='question'>
+			<input type="radio" name='question3' value='7' checked>7<br>
+			<input type="radio" name='question3' value='8'>8<br>
+			<input type="radio" name='question3' value='9'>9<br>
+		</form>
+		<p>Question.</p>
+		<form class='question'>
+			<input type="radio" name='question4' value='10' checked>10<br>
+			<input type="radio" name='question4' value='11'>11<br>
+			<input type="radio" name='question4' value='12'>12<br>
+		</form>
+
+		<button id="submit">Submit</button>
+
+		<script type="text/javascript">
+			var submitButton=document.getElementById("submit");
+			submitButton.addEventListener("click", ShowResults);
+			var p=document.createElement('p');
+
+			function ShowResults(){
+				p.innerHTML='';//reset the submit content
+
+				var forms=document.getElementsByClassName('question');//get the forms
+				Array.from(forms);//turn the forms into an array
+				var result=0;
+				
+				for(var i=0;i<forms.length;i+=1){
+					var inputs=Array.from(forms[i].children);//turn the inputs into an array
+					for(var j=0;j<inputs.length;j+=1){
+						if(inputs[j].checked)//if the radio button is checked, add it's value to the result
+						{
+							result+=Number(inputs[j].value);
+						}
+					}
+				}
+
+				p.innerHTML=result;//put the result as a text into a paragraph
+				document.body.appendChild(p);//append the paragraph at the end of the html body
+			}
+		</script>
+</div> <!-- Decision Science -->
 
 <div id="Downloads" style="display:none">
 <table class="sortable" width=100% border=0px>
